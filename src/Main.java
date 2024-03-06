@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -25,29 +24,12 @@ public class Main {
         int i = numeroIntero.sommaCifreNumeroIntero();
 
 
-
+        System.out.println();
         System.out.println("la somma delle cifre presenti nel numero intero è: " + i);
         System.out.println("la somma delle cifre presenti nella stringa è: " + somma);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
 
 }
