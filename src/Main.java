@@ -7,29 +7,29 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("--------STRING SCANNER INPUT-------");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Inserisci un numero");
-        String numeri = scanner.nextLine();  //
-        SommaNum sommaNum = new SommaNum(numeri);
-        int somma = sommaNum.sommaCifre();
+        boolean cnd = true;
+
+        do {
+            System.out.println("****************************************");
+            System.out.println("****************************************");
+            System.out.println("SCEGLI OPERAZIONE CHE VUOI ESEGUIRE");
+            System.out.println("****************************************");
+            System.out.println("DIGITA 1 PER INSERIRE UN NUMERO INTERO");
+            System.out.println("--------------------------------------");
+            System.out.println("DIGITA 2 PER INSERIRE UN INSIEME DI CIFRE");
+            System.out.println("--------------------------------------");
+            Scanner scanner1 = new Scanner(System.in);
+            System.out.println("Inserisci il numero che equivale alla tua scelta");
+            Integer sceltaUtente = scanner1.nextInt();
 
 
-
-        System.out.println("--------INTEGER SCANNER INPUT-------");
-        Scanner scanner1 = new Scanner(System.in);
-        System.out.println("Inserisci un numero");
-        Integer inputUtente1 = scanner1.nextInt();
-        NumeroIntero numeroIntero = new NumeroIntero(inputUtente1);
-        int i = numeroIntero.sommaCifreNumeroIntero();
-
-
-        System.out.println();
-        System.out.println("la somma delle cifre presenti nel numero intero è: " + i);
-        System.out.println("la somma delle cifre presenti nella stringa è: " + somma);
-
-
-
+            if(sceltaUtente == 1){
+                SommaNum sommaNum = new SommaNum();
+                sommaNum.start();
+            }else if (sceltaUtente == 2){
+                NumeroIntero numeroIntero = new NumeroIntero();
+                numeroIntero.start();
+            }
+        }while (cnd);
     }
-
 }
