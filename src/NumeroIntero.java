@@ -11,13 +11,18 @@ public class NumeroIntero {
     }
 
     public void start(){
-        System.out.println("--------INTEGER SCANNER INPUT-------");
-        Scanner scanner1 = new Scanner(System.in);
-        System.out.println("Inserisci un numero");
-        int inputUtente1 = scanner1.nextInt();
-        NumeroIntero numeroIntero = new NumeroIntero(inputUtente1);
-        int i = numeroIntero.sommaCifreNumeroIntero();
-        System.out.println("la somma delle cifre presenti nel numero intero è: " + i);
+        try {
+            System.out.println("--------INTEGER SCANNER INPUT-------");
+            Scanner scanner1 = new Scanner(System.in);
+            System.out.println("Inserisci un numero");
+            int inputUtente1 = scanner1.nextInt();
+            NumeroIntero numeroIntero = new NumeroIntero(inputUtente1);
+            int i = numeroIntero.sommaCifreNumeroIntero();
+            System.out.println("la somma delle cifre presenti nel numero intero è: " + i);
+        }catch (Exception e){
+            System.out.println("errore durante l'inserimento");
+        }
+
     }
 
     public  int sommaCifreNumeroIntero() {

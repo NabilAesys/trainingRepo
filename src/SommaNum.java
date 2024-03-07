@@ -10,13 +10,18 @@ public class SommaNum {
     }
 
     public void start(){
-        System.out.println("--------STRING SCANNER INPUT-------");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Inserisci un numero");
-        String numeri = scanner.nextLine();  //
-        SommaNum sommaNum = new SommaNum(numeri);
-        int somma = sommaNum.sommaCifre();
-        System.out.println("la somma delle cifre presenti nella stringa è: " + somma);
+        try {
+            System.out.println("--------STRING SCANNER INPUT-------");
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Inserisci un numero");
+            String numeri = scanner.nextLine();
+            SommaNum sommaNum = new SommaNum(numeri);
+            int somma = sommaNum.sommaCifre();
+            System.out.println("la somma delle cifre presenti nella stringa è: " + somma);
+        }catch (Exception e){
+            System.out.println("errore durante l'inserimento");
+        }
+
     }
     public int sommaCifre() {
         for (int i = 0; i < numeri.length(); i++) {
