@@ -25,7 +25,6 @@ public class SommaNum {
     }
     public int sommaCifre() {
         for (int i = 0; i < numeri.length(); i++) {
-            // Converte il carattere corrente in un numero intero e lo somma alla somma totale
             somma += Character.getNumericValue(numeri.charAt(i));
         }
         return somma;
