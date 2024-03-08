@@ -13,7 +13,6 @@ public class IndovinaNumero {
                 System.out.println("------------------------------");
                 System.out.println("--------INDOVINA NUMERO-------");
                 System.out.println("------------------------------");
-                //System.out.println(number);
                 System.out.println("NUMERO GENERATO");
                 System.out.println("FAI IL TUO GIOCO!");
                 System.out.println("INDOVINA IL NUMERO");

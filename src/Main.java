@@ -28,11 +28,11 @@ public class Main {
 
 
                     if (sceltaUtente == 1) {
-                        SommaNum sommaNum = new SommaNum();
-                        sommaNum.start();
-                    } else if (sceltaUtente == 2) {
                         NumeroIntero numeroIntero = new NumeroIntero();
                         numeroIntero.start();
+                    } else if (sceltaUtente == 2) {
+                        SommaNum sommaNum = new SommaNum();
+                        sommaNum.start();
                     }else if (sceltaUtente == 3) {
                         IndovinaNumero indovinaNumero= new IndovinaNumero();
                         indovinaNumero.start();
