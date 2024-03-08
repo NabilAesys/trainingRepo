@@ -12,7 +12,6 @@ public class Main {
             do {
                 try {
 
-
                     System.out.println("****************************************");
                     System.out.println("****************************************");
                     System.out.println("SCEGLI OPERAZIONE CHE VUOI ESEGUIRE");
@@ -20,6 +19,8 @@ public class Main {
                     System.out.println("DIGITA 1 PER INSERIRE UN NUMERO INTERO");
                     System.out.println("--------------------------------------");
                     System.out.println("DIGITA 2 PER INSERIRE UN INSIEME DI CIFRE");
+                    System.out.println("--------------------------------------");
+                    System.out.println("DIGITA 3 PER GIOCARE A INDOVINA NUMERO");
                     System.out.println("--------------------------------------");
                     Scanner scanner1 = new Scanner(System.in);
                     System.out.println("Inserisci il numero che equivale alla tua scelta");
@@ -32,6 +33,9 @@ public class Main {
                     } else if (sceltaUtente == 2) {
                         NumeroIntero numeroIntero = new NumeroIntero();
                         numeroIntero.start();
+                    }else if (sceltaUtente == 3) {
+                        IndovinaNumero indovinaNumero= new IndovinaNumero();
+                        indovinaNumero.start();
                     }
                 }catch (Exception e){
                     condition= true;
