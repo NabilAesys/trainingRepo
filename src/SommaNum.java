@@ -20,7 +20,7 @@ public class SommaNum {
             System.out.println("Inserisci un numero");
             String numeri = scanner.nextLine();
             SommaNum sommaNum = new SommaNum(numeri);
-            int somma = sommaNum.sommaCifre();
+            int somma = sommaNum.sommaCifreNumeroIntero();
             System.out.println("la somma delle cifre presenti nella stringa è: " + somma);
             condition = false;
         }catch (Exception e){
@@ -28,9 +28,12 @@ public class SommaNum {
         }
         }while (condition);
     }
-    public int sommaCifre() {
-        for (int i = 0; i < numeri.length(); i++) {
-            somma += Character.getNumericValue(numeri.charAt(i));
+
+    public  int sommaCifreNumeroIntero() {
+        int number = Integer.parseInt(numeri);
+        while (number != 0) {
+            somma += number % 10;
+            number /= 10;
         }
         return somma;
     }
