@@ -14,7 +14,6 @@ public class NumeroIntero {
     public void start(){
         do {
 
-
         try {
             System.out.println("--------INTEGER SCANNER INPUT-------");
             Scanner scanner1 = new Scanner(System.in);
@@ -26,6 +25,7 @@ public class NumeroIntero {
             condition=false;
         }catch (Exception e){
             System.out.println("errore durante l'inserimento");
+            System.out.println("inserisci un carattere numerico");
         }
         }while (condition);
     }

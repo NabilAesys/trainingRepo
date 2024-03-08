@@ -34,7 +34,7 @@ public class IndovinaNumero {
                 }
             } catch (Exception e) {
                 System.out.println("errore durante l'inserimento!!");
-                System.out.println("inserisci un numero");
+                System.out.println("inserisci un carattere numerico");
             }
         }while (condition);
     }
