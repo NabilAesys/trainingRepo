@@ -4,7 +4,6 @@ public class SommaNum {
     public SommaNum() {
     }
     private String numeri;
-
     boolean condition = true;
     int somma = 0;
     public SommaNum(String numeri) {
@@ -20,20 +19,19 @@ public class SommaNum {
             System.out.println("Inserisci un numero");
             String numeri = scanner.nextLine();
             SommaNum sommaNum = new SommaNum(numeri);
-            int somma = sommaNum.sommaCifreNumeroIntero();
+            int somma = sommaNum.sommaCifre();
             System.out.println("la somma delle cifre presenti nella stringa è: " + somma);
             condition = false;
         }catch (Exception e){
             System.out.println("errore durante l'inserimento");
+            System.out.println("inserisci un carattere numerico");
         }
         }while (condition);
     }
 
-    public  int sommaCifreNumeroIntero() {
-        int number = Integer.parseInt(numeri);
-        while (number != 0) {
-            somma += number % 10;
-            number /= 10;
+    public int sommaCifre() {
+        for (int i = 0; i < numeri.length(); i++) {
+            somma += Character.getNumericValue(numeri.charAt(i));
         }
         return somma;
     }
