@@ -26,7 +26,6 @@ public class Main {
                     System.out.println("Inserisci il numero che equivale alla tua scelta");
                     Integer sceltaUtente = scanner1.nextInt();
 
-
                     if (sceltaUtente == 1) {
                         NumeroIntero numeroIntero = new NumeroIntero();
                         numeroIntero.start();
@@ -36,11 +35,15 @@ public class Main {
                     }else if (sceltaUtente == 3) {
                         IndovinaNumero indovinaNumero= new IndovinaNumero();
                         indovinaNumero.start();
+                    }else{
+                        System.out.println("ERRORE!");
+                        System.out.println("SELEZIONA TRA LE SCELTE DISPONIBILI");
+                        condition= true;
                     }
                 }catch (Exception e){
                     condition= true;
-                    System.out.println("ERRORE durante l'inserimento!");
-                    System.out.println("INSRISCI UN NUMERO");
+                    System.out.println("ERRORE!");
+                    System.out.println("INSRISCI UN CARATTERE NUMERICO");
                 }
             }while (cnd);
         }while (condition);
