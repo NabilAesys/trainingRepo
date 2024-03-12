@@ -22,6 +22,8 @@ public class Main {
                     System.out.println("--------------------------------------");
                     System.out.println("DIGITA 3 PER GIOCARE A INDOVINA NUMERO");
                     System.out.println("--------------------------------------");
+                    System.out.println("DIGITA 4 PER GIOCARE A GIOCO DELL'IMPICCATO");
+                    System.out.println("--------------------------------------");
                     Scanner scanner1 = new Scanner(System.in);
                     System.out.println("Inserisci il numero che equivale alla tua scelta");
                     Integer sceltaUtente = scanner1.nextInt();
@@ -33,11 +35,14 @@ public class Main {
                         SommaNum sommaNum = new SommaNum();
                         sommaNum.start();
                     }else if (sceltaUtente == 3) {
-                        IndovinaNumero indovinaNumero= new IndovinaNumero();
+                        IndovinaNumero indovinaNumero = new IndovinaNumero();
                         indovinaNumero.start();
+                    }else if (sceltaUtente == 4) {
+                        GiocoImpiccato giocoImpiccato = new GiocoImpiccato();
+                        giocoImpiccato.start();
                     }else{
                         System.out.println("ERRORE!");
-                        System.out.println("SELEZIONA TRA LE SCELTE DISPONIBILI");
+                        System.out.println("SELEZIONA TRA LE SCELTE DISPONIBILI3");
                         condition= true;
                     }
                 }catch (Exception e){
