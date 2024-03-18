@@ -38,8 +38,8 @@ public class Main {
                         IndovinaNumero indovinaNumero = new IndovinaNumero();
                         indovinaNumero.start();
                     }else if (sceltaUtente == 4) {
-                        GiocoImpiccato giocoImpiccato = new GiocoImpiccato();
-                        giocoImpiccato.start();
+                        GiocoDellImpiccato giocoDellImpiccato = new GiocoDellImpiccato();
+                        giocoDellImpiccato.start();
                     }else{
                         System.out.println("ERRORE!");
                         System.out.println("SELEZIONA TRA LE SCELTE DISPONIBILI3");
