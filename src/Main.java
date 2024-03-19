@@ -24,6 +24,8 @@ public class Main {
                     System.out.println("--------------------------------------");
                     System.out.println("DIGITA 4 PER GIOCARE A GIOCO DELL'IMPICCATO");
                     System.out.println("--------------------------------------");
+                    System.out.println("DIGITA 5 PER CIFRARE O DECIFRAE UNA PAROLA");
+                    System.out.println("--------------------------------------");
                     Scanner scanner1 = new Scanner(System.in);
                     System.out.println("Inserisci il numero che equivale alla tua scelta");
                     Integer sceltaUtente = scanner1.nextInt();
@@ -40,6 +42,9 @@ public class Main {
                     }else if (sceltaUtente == 4) {
                         GiocoDellImpiccato giocoDellImpiccato = new GiocoDellImpiccato();
                         giocoDellImpiccato.start();
+                    }else if (sceltaUtente == 5) {
+                            Cifrario cifrario = new Cifrario();
+                            cifrario.start();
                     }else{
                         System.out.println("ERRORE!");
                         System.out.println("SELEZIONA TRA LE SCELTE DISPONIBILI3");
